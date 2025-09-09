@@ -14,7 +14,6 @@ Output: High-quality videos (MP4, WEBM, or animated WEBP)
 6-Built on ComfyUI (modular, extendable)
 7-Optimized for Colab + GPU memory cleanup
 
-## Folder Structure
 /content/
 ├── ComfyUI/
 │   ├── custom_nodes/
@@ -23,7 +22,8 @@ Output: High-quality videos (MP4, WEBM, or animated WEBP)
 │   │   ├── unet/
 │   │   ├── vae/
 │   │   └── text_encoders/
-│   └── output/
+│   └── output/         ← Final images/videos saved here
+
 
 
 ## Workflow
