@@ -6,13 +6,13 @@ Output: High-quality videos (MP4, WEBM, or animated WEBP)
 
 ## Features
 
--Simple text-to-video generation
--Output in MP4 / WEBM / WEBP / PNG
--Uses Wan2.1-T2V-14B UNet in GGUF format (fast + efficient)
--UMT5-XXL text encoder for better language understanding
--Latent decoding with VAE for realistic frames
--Built on ComfyUI (modular, extendable)
--Optimized for Colab + GPU memory cleanup
+1-Simple text-to-video generation
+2-Output in MP4 / WEBM / WEBP / PNG
+3-Uses Wan2.1-T2V-14B UNet in GGUF format (fast + efficient)
+4-UMT5-XXL text encoder for better language understanding
+5-Latent decoding with VAE for realistic frames
+6-Built on ComfyUI (modular, extendable)
+7-Optimized for Colab + GPU memory cleanup
 
 ## Folder Structure
 /content/
@@ -39,21 +39,21 @@ flowchart TD
     H --> I[Save as MP4 / WEBM / WEBP / PNG]
 
 ## Internal Steps
--Load pre-trained models (UNet, VAE, CLIP/UMT5)
--Encode positive and negative prompts
--Generate an empty latent video grid
--Sample latent frames using UNet + KSampler
--Decode using VAE
--Save and visualize the final output
+1-Load pre-trained models (UNet, VAE, CLIP/UMT5)
+2-Encode positive and negative prompts
+3-Generate an empty latent video grid
+4-Sample latent frames using UNet + KSampler
+5-Decode using VAE
+6-Save and visualize the final output
 
 ## Key Insights
--GGUF models enable efficient inference with lower memory use
--Using UMT5 for prompt encoding improves text understanding
--Built on ComfyUI, allowing modular node-based workflow
--The same model can produce single-frame images or full videos
--Video quality is strongly affected by:
--Prompt quality
--CFG scale
+1-GGUF models enable efficient inference with lower memory use
+2-Using UMT5 for prompt encoding improves text understanding
+3-Built on ComfyUI, allowing modular node-based workflow
+4-The same model can produce single-frame images or full videos
+5-Video quality is strongly affected by:
+6-Prompt quality
+7-CFG scale
 -Number of diffusion steps
 -VAE and UNet resolution support
 
